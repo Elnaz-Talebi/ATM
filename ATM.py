@@ -65,13 +65,13 @@ def atm():
                 
 
             if selected_option == "3" :
-                deposit_amount = input("Enter the amount ")
+                withdrawal_amount = input("Enter the amount ")
 
-                if int(deposit_amount) >= account["balance"]:
+                if int(withdrawal_amount) >= account["balance"]:
                     print("Your amount is not sufficient")
 
                 else:
-                    account["balance"] -= int(deposit_amount)
+                    account["balance"] -= int(withdrawal_amount)
                     print("Your new balance is: ", account["balance"] )
 
         
